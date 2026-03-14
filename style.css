@@ -1,0 +1,247 @@
+:root{
+--biru-tua:#243A6F;
+--biru-muda:#3558A6;
+--biru-terang:#6C8ED9;
+--putih:#ffffff;
+--abu-gelap:#1E293B;
+--abu-muda:#64748B;
+--bg-section:#F8FAFC;
+}
+
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Segoe UI,Arial,sans-serif;
+color:var(--abu-gelap);
+line-height:1.6;
+transition:0.3s;
+}
+
+/* NAVBAR */
+
+#navbar{
+position:sticky;
+top:0;
+background:var(--biru-tua);
+z-index:1000;
+}
+
+.navbar-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+max-width:1200px;
+margin:auto;
+padding:16px 24px;
+}
+
+.navbar-menu{
+display:flex;
+gap:24px;
+}
+
+.menu-link{
+color:white;
+text-decoration:none;
+}
+
+.menu-link:hover{
+opacity:0.8;
+}
+
+.tombol-dark{
+background:transparent;
+border:2px solid var(--biru-terang);
+color:var(--biru-terang);
+padding:8px 16px;
+border-radius:20px;
+cursor:pointer;
+}
+
+/* HERO */
+
+#hero{
+min-height:85vh;
+background:linear-gradient(135deg,#243A6F,#3558A6);
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:40px;
+}
+
+.hero-judul{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero-tombol-grup{
+display:flex;
+gap:16px;
+justify-content:center;
+}
+
+.tombol-utama{
+background:white;
+color:#243A6F;
+padding:12px 24px;
+border-radius:8px;
+text-decoration:none;
+}
+
+.tombol-outline{
+border:2px solid white;
+padding:12px 24px;
+border-radius:8px;
+color:white;
+text-decoration:none;
+}
+
+/* STATISTIK */
+
+#statistik{
+background:#243A6F;
+padding:60px 24px;
+color:white;
+}
+
+.statistik-container{
+display:flex;
+justify-content:space-around;
+max-width:1200px;
+margin:auto;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.stat-item{
+text-align:center;
+}
+
+.stat-angka{
+font-size:56px;
+color:#6C8ED9;
+font-weight:bold;
+}
+
+/* SECTION */
+
+.section-wrapper{
+max-width:1200px;
+margin:auto;
+padding:80px 24px;
+}
+
+/* PROGRAM */
+
+.program-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:28px;
+}
+
+.program-kartu{
+background:#3558A6;
+padding:30px;
+border-radius:12px;
+box-shadow:0 4px 20px rgba(0,0,0,0.08);
+text-align:center;
+transition:0.3s;
+}
+
+.program-kartu:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.program-kartu.unggulan{
+background:#3558A6;
+color:white;
+}
+
+/* SAMBUTAN REKTOR */
+
+.sambutan-container{
+display:flex;
+align-items:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.sambutan-teks{
+max-width:500px;
+}
+
+.foto-rektor{
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid #3558A6;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+
+#footer{
+background: #3558A6;
+color:white;
+}
+
+.footer-container{
+max-width:1200px;
+margin:auto;
+padding:60px 24px;
+}
+
+.footer-bawah{
+text-align:center;
+padding:20px;
+border-top:1px solid rgba(255,255,255,0.2);
+}
+
+/* DARK MODE */
+
+body.dark-mode{
+background:#020617;
+color:white;
+}
+
+body.dark-mode #navbar{
+background:#020617;
+}
+
+body.dark-mode #hero{
+background:linear-gradient(135deg,#020617,#1e293b);
+}
+
+body.dark-mode #statistik{
+background:#020617;
+}
+
+body.dark-mode .program-kartu{
+background:#1e293b;
+color:white;
+}
+
+body.dark-mode #footer{
+background:#020617;
+}
+
+/* NAVBAR SCROLL */
+
+.navbar-scroll{
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+background:#1a2d56;
+}
